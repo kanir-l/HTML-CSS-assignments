@@ -1,0 +1,18 @@
+@mixin background-img {
+    background-size: cover;
+    background-position: center center;
+}
+
+@mixin arrow-size {
+    width: 30px;
+    height: 30px;
+}
+
+@mixin protrait-box {
+    width: 300px;
+    height: 300px;
+    border-radius: 50%;
+    box-shadow: 1px 1px 20px #838383;
+    margin-bottom: 20px;
+}
+
