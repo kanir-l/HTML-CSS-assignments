@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bootstrap inlämningsuppgift</title>
+
+    <link rel="stylesheet" href="main.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300&display=swap" rel="stylesheet">
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
+</head>
+<body>
+    <!-- Bootstrap grid positioning -->
+    <div class="container-fluid app">
+
+        <div class="row header">
+            <div class="col-6 col-md-1 col-xl-1 logo">T&M</div>
+            <!-- Navigation -->
+            <div class="col-6 col-md-11 col-xl-11 navbar" id="navbar"> 
+                <ul class="nav justify-content-end">
+                    <li class="nav-item">
+                      <a class="nav-link active" href="https://getbootstrap.com/">Privite customers</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="https://getbootstrap.com/">Business customers</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="https://getbootstrap.com/">Be our partners</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="https://getbootstrap.com/">About T&M Designs</a>
+                    </li>
+                    </ul>
+                    <!-- Badge -->
+                    <button type="button" class="btn btn-primary btn-badge">
+                        Profile 
+                        <span class="badge badge-light">3</span>
+                        <span class="sr-only">unread messages</span>
+                    </button>
+                </nav>
+            </div>
+        </div>
+
+        <div class="row main">
+            <div class="hero">
+                <!-- Carousel -->
+                <div id="carouselExampleInterval" class="carousel slide" data-ride="carousel">
+                    <div class="carousel-inner">
+                      <div class="carousel-item active" data-interval="5000">
+                        <img src="img/hero1.jpg" class="d-block" alt="...">
+                      </div>
+                      <div class="carousel-item" data-interval="5000">
+                        <img src="img/hero2.jpg" class="d-block" alt="...">
+                      </div>
+                      <div class="carousel-item" data-interval="5000">
+                        <img src="img/hero3.jpg" class="d-block" alt="...">
+                      </div>
+                    </div>
+                    <a class="carousel-control-prev" href="#carouselExampleInterval" role="button" data-slide="prev">
+                      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                      <span class="sr-only">Previous</span>
+                    </a>
+                    <a class="carousel-control-next" href="#carouselExampleInterval" role="button" data-slide="next">
+                      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                      <span class="sr-only">Next</span>
+                    </a>
+                </div>
+            </div>
+            <div class="col-12 col-md-5 col-xl-6 promo"> 
+                <!-- BG IMG in CSS -->
+                <div class="promo-section">
+                    <p>Tropical & Minimal</p>
+                </div>
+            </div>
+            <div class="col-12 col-md-7 col-xl-6 content">
+                <div class="content-container">
+                    <p>A minimalist design is a design that only uses the most essential elements, including basic shapes and limited color palettes, to create something that's very simple yet memorable.</p>
+                    <p>In reality, tropical architecture is all about achieving thermal comfort through the use of passive design elements like sunshades, cavity walls, light shelves, overhangs, roof and wall insulation and even shading from large trees to block the sun. It can look very traditional, ultramodern or even high-tech.</p> 
+                    <!-- Modal -->
+                    <!-- Button trigger modal -->
+                    <button type="button" class="btn btn-primary btn-modal" data-toggle="modal" data-target="#staticBackdrop">
+                        Get the promotion code!
+                    </button>
+                    <!-- Modal -->
+                    <div class="modal fade" id="staticBackdrop" data-backdrop="static" data-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+                        <div class="modal-dialog">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                            <h5 class="modal-title" id="staticBackdropLabel">10% Code</h5>
+                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                <span aria-hidden="true">&times;</span>
+                            </button>
+                            </div>
+                            <div class="modal-body">
+                            <b style="font-size: 20px;">FDS20</b><br>expires on the 31 December
+                            </div>
+                            <div class="modal-footer">
+                            <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                            </div>
+                        </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="row footer">
+            <div class="col-6 company">
+                <ul>
+                    <li>Tropical and Minimal AB</li>
+                    <li>Stockholm, Sweden</li>
+                    <li>info@tropicalandminimal.se</li>
+                </ul>
+            </div>
+            <div class="col-6 social">
+                <!-- Font-awesome for Social Media -->
+                <a href="https://www.facebook.com/" class="fa fa-facebook"></a>
+                <a href="https://www.instagram.com/" class="fa fa-instagram"></a>
+                <a href="https://twitter.com/" class="fa fa-twitter"></a>
+            </div>
+        </div>
+    
+    </div> 
+
+</body>
+</html>
