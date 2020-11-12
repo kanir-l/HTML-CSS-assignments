@@ -1,0 +1,36 @@
+@import 'variebles';
+@import 'mixins';
+
+#wrapper {
+    @include phones-only {
+        background-color: $bg-color;
+    }
+
+    @include tablets-only {
+        @include box;
+    }
+}
+
+.abox {
+    width 500px;
+    height: 300px;
+
+    @include box;
+    @include rotate;
+}
+
+.bbox {
+    width 300px;
+    height: 600px;
+
+    @include box;
+    @include transform(rotate(15deg));
+}
+
+
+@include phones-only {
+    #wrapper {
+        width: 100%;
+        background-color: red;
+    }
+}
